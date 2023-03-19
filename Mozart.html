@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Биография Вольфганга Амадея Моцарта</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+		}
+
+		header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+
+		h1 {
+			margin: 0;
+			font-size: 36px;
+			font-weight: bold;
+		}
+
+		h2 {
+			margin: 0;
+			font-size: 28px;
+			font-weight: bold;
+		}
+
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 50px 20px;
+		}
+
+		p {
+			margin: 0 0 20px;
+			font-size: 16px;
+			text-align: justify;
+			text-justify: inter-word;
+		}
+
+		.profile-image {
+			float: right;
+			width: 300px;
+			height: 300px;
+			margin-left: 20px;
+			background-image: url('https://sun9-39.userapi.com/impf/c855328/v855328196/77294/n8ga8QuonJU.jpg?size=900x1323&quality=96&sign=8fea52a35ac35073f8b61fb589c4560c&c_uniq_tag=kLxVl7oN5fa9p4tUNIa7eqEcDV0YBT1giiqZb9UnOnw&type=album');
+			background-size: cover;
+			background-position: center;
+			border-radius: 50%;
+		}
+        .button {
+            display: inline-block;
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        .counter {
+            display: inline-block;
+            margin-left: 20px;
+        }
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Биография Вольфганга Амадея Моцарта</h1>
+	</header>
+
+	<div class="container">
+		<div class="profile-image"></div>
+
+		<h2>Ранняя жизнь</h2>
+		<p>Вольфганг Амадей Моцарт (1756-1791) - австрийский композитор, считающийся одним из самых великих классических музыкантов в истории человечества. Был рожден в Салцбурге в семье Леопольда и Анны Марии Моцарт.С детства проявлял феноменальные музыкальные способности, в 6 лет сделал свой первый общественный выступление. В юношеские годы путешествовал вместе с отцом и сестрой по Европе, где выступал на придворных площадках.</p>
+
+		<h2>Музыкальная карьера</h2>
+		<p>ФЕго творчество представлено обширным количеством сочинений в самых разных жанрах - оперы, симфонии, концерты, камерная музыка и даже церковные произведения. В трехлетнем возрасте начал сочинять музыку, и к концу жизни написал более 600 сочинений на любой вкус и жанр.Одни из самых известных сочинений Моцарта - оперы "Свадьба Фигаро", "Дон Жуан", "Колдунья", "Волшебная флейта", симфонии "Линзен", "Юпитер", концерты для фортепиано и скрипки, камерные духовые квинтеты и многое другое.
+		<h2>Смерть</h2>
+		<p>Моцарт умер в Вене в 1791 году в возрасте 35 лет, но его музыка живет и по сей день, оставаясь неизменным символом высочайшего качества музыкального творчества.</p>
+        <div class="music-button">
+            <a href="https://music.yandex.ru/artist/9170" class="button" target="_blank">Послушайте музыку Франца Антона Моцарта</a>
+<div class="counter">Исполняемые песни: <span id="counter">0</span></div>
+</div>
+
+<script>
+    const button = document.querySelector('.music-button');
+    const counter = document.querySelector('#counter');
+
+    button.addEventListener('click', function() {
+        let count = parseInt(counter.textContent);
+        count++;
+        counter.textContent = count;
+    });
+</script>
+
+</body>
+</html>

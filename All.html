@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Биографии музыкантов</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+		}
+
+		header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+
+		h1 {
+			margin: 0;
+		}
+
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+		}
+
+		.card {
+			background-color: #fff;
+			border-radius: 10px;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+			display: inline-block;
+			margin: 10px;
+			overflow: hidden;
+			width: 200px;
+			position: relative;
+		}
+
+		.card img {
+			border-radius: 50%;
+			display: block;
+			height: 200px;
+			margin: 0 auto;
+			object-fit: cover;
+			overflow: hidden;
+			width: 200px;
+		}
+
+		.card h2 {
+			font-size: 18px;
+			margin: 10px 0;
+			text-align: center;
+		}
+
+		.card p {
+			font-size: 14px;
+			margin: 10px;
+			text-align: justify;
+			text-justify: inter-word;
+		}
+		.card-footer {
+			background-color: #f2f2f2;
+			border-top: 1px solid #ccc;
+			position: relative;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			padding: 1px;
+			font-size: 12px;
+		}
+
+		.card-footer .counter {
+			display: inline-block;
+			margin-right: 10px;
+		}
+
+		.card-footer .counter span {
+			display: inline-block;
+			margin-left: 5px;
+		}
+
+		.card-footer button {
+			background-color: transparent;
+			border: none;
+			cursor: pointer;
+			color: #333;
+		}
+
+		.card-footer button:hover {
+			text-decoration: underline;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Биографии музыкантов</h1>
+	</header>
+
+	<div class="container">
+		<div class="card">
+		<a href="C:\Users\nandr\OneDrive\Рабочий стол\index\Tsoy.html" target="_blank"><img src="https://avatars.dzeninfra.ru/get-zen_doc/153246/pub_5b4b09de1f242d00a9b963b3_5b4b0a2756927000a957282c/scale_1200" alt="Musician 1"></a>
+		<h2>Музыкант 1</h2>
+		<p>Виктор Цой.</p>
+		<div class="card-footer">
+			<div class="counter">
+				<span id="likes2">0</span> Likes
+			</div>
+			<div class="counter">
+				<span id="dislikes2">0</span> Dislikes
+			</div>
+			<button onclick="like2()">Like</button>
+			<button onclick="dislike2()">Dislike</button>
+		</div>
+	</div>
+
+	<div class="card">
+		<a href="C:\Users\nandr\OneDrive\Рабочий стол\index\Mozart.html" target="_blank"><img src="https://sun9-39.userapi.com/impf/c855328/v855328196/77294/n8ga8QuonJU.jpg?size=900x1323&quality=96&sign=8fea52a35ac35073f8b61fb589c4560c&c_uniq_tag=kLxVl7oN5fa9p4tUNIa7eqEcDV0YBT1giiqZb9UnOnw&type=album" alt="Musician 2"></a>
+		<h2>Музыкант 2</h2>
+		<p>В. А. Моцарт.</p>
+		<div class="card-footer">
+			<div class="counter">
+				<span id="likes3">0</span> Likes
+			</div>
+			<div class="counter">
+				<span id="dislikes3">0</span> Dislikes
+			</div>
+			<button onclick="like3()">Like</button>
+			<button onclick="dislike3()">Dislike</button>
+		</div>
+	</div>
+
+<div class="card">
+		<a href="C:\Users\nandr\OneDrive\Рабочий стол\index\Dimash.html" target="_blank"><img src="https://static.tildacdn.com/tild3334-3539-4262-b831-386537366566/zhenyavolkova_734141.jpg" alt="Musician 3"></a>
+		<h2>Музыкант 3</h2>
+		<p>Димаш Кудайберген.</p>
+		<div class="card-footer">
+			<div class="counter">
+				<span id="likes">0</span> Likes
+			</div>
+			<div class="counter">
+				<span id="dislikes">0</span> Dislikes
+			</div>
+			<button onclick="like()">Like</button>
+			<button onclick="dislike()">Dislike</button>
+		</div>
+	</div>
+</div>
+<script>
+	let likes = 0;
+	let dislikes = 0;
+
+	function like() {
+		likes++;
+		document.getElementById("likes").innerHTML = likes;
+	}
+
+	function dislike() {
+		dislikes++;
+		document.getElementById("dislikes").innerHTML = dislikes;
+	}
+
+	let likes2 = 0;
+	let dislikes2 = 0;
+
+	function like2() {
+		likes2++;
+		document.getElementById("likes2").innerHTML = likes2;
+	}
+
+	function dislike2() {
+		dislikes2++;
+		document.getElementById("dislikes2").innerHTML = dislikes2;
+	}
+
+	let likes3 = 0;
+	let dislikes3 = 0;
+
+	function like3() {
+		likes3++;
+		document.getElementById("likes3").innerHTML = likes3;
+	}
+
+	function dislike3() {
+		dislikes3++;
+		document.getElementById("dislikes3").innerHTML = dislikes3;
+	}
+</script>
+</body>
+</html>

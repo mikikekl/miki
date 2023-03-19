@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Биография Димаша Кудайбергена</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+		}
+
+		header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+
+		h1 {
+			margin: 0;
+			font-size: 36px;
+			font-weight: bold;
+		}
+
+		h2 {
+			margin: 0;
+			font-size: 28px;
+			font-weight: bold;
+		}
+
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 50px 20px;
+		}
+
+		p {
+			margin: 0 0 20px;
+			font-size: 16px;
+			text-align: justify;
+			text-justify: inter-word;
+		}
+
+		.profile-image {
+			float: right;
+			width: 300px;
+			height: 300px;
+			margin-left: 20px;
+			background-image: url('https://static.tildacdn.com/tild3334-3539-4262-b831-386537366566/zhenyavolkova_734141.jpg');
+			background-size: cover;
+			background-position: center;
+			border-radius: 50%;
+		}
+        .button {
+            display: inline-block;
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        .counter {
+            display: inline-block;
+            margin-left: 20px;
+        }
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Биография Димаша Кудайбергена</h1>
+	</header>
+
+	<div class="container">
+		<div class="profile-image"></div>
+
+		<h2>Ранняя жизнь</h2>
+		<p>Димаш Кудайберген (род. 24 мая 1994 года в городе Актау, Казахстан) - казахстанский певец, известный своим широким вокальным диапазоном и уникальным исполнением. Димаш начал заниматься вокалом в раннем детстве, участвуя в различных конкурсах и фестивалях.</p>
+
+		<h2>Музыкальная карьера</h2>
+		<p>ЦВ 2017 году Димаш стал участником китайского телешоу "Singer 2017", где покорил сердца миллионов зрителей на всем мире своими исполнениями песен. Его уникальный голос и талант привлекли внимание мировой аудитории, а исполнение песни "SOS d'un terrien en détresse" принесло ему титул "Человека-года" в Китае в 2017 году.С тех пор Димаш выпустил несколько синглов и стал одним из самых популярных певцов в Центральной Азии и Китае, где он выступал на крупнейших концертах, таких как "New Year's Gala" (2018) и "Belt and Road International Music Festival" (2019).Особенностью творчества Димаша являются его высокие ноты, благодаря чему его называют "динозавром в мире музыки". Он также изучает множество языков и исполняет песни на разных языках, включая казахский, китайский, английский, французский и русский.</p>
+
+
+        <div class="music-button">
+            <a href="https://music.yandex.ru/artist/7046223" class="button" target="_blank">Послушайте музыку Виктора Цоя</a>
+<div class="counter">Исполняемые песни: <span id="counter">0</span></div>
+</div>
+
+<script>
+    const button = document.querySelector('.music-button');
+    const counter = document.querySelector('#counter');
+
+    button.addEventListener('click', function() {
+        let count = parseInt(counter.textContent);
+        count++;
+        counter.textContent = count;
+    });
+</script>
+<!--
+</body>
+</html>-->

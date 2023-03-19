@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Биография Виктора Цоя</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+		}
+
+		header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+
+		h1 {
+			margin: 0;
+			font-size: 36px;
+			font-weight: bold;
+		}
+
+		h2 {
+			margin: 0;
+			font-size: 28px;
+			font-weight: bold;
+		}
+
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 50px 20px;
+		}
+
+		p {
+			margin: 0 0 20px;
+			font-size: 16px;
+			text-align: justify;
+			text-justify: inter-word;
+		}
+
+		.profile-image {
+			float: right;
+			width: 300px;
+			height: 300px;
+			margin-left: 20px;
+			background-image: url('https://avatars.dzeninfra.ru/get-zen_doc/153246/pub_5b4b09de1f242d00a9b963b3_5b4b0a2756927000a957282c/scale_1200');
+			background-size: cover;
+			background-position: center;
+			border-radius: 50%;
+		}
+        .button {
+            display: inline-block;
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        .counter {
+            display: inline-block;
+            margin-left: 20px;
+        }
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Биография Виктора Цоя</h1>
+	</header>
+
+	<div class="container">
+		<div class="profile-image"></div>
+
+		<h2>Ранняя жизнь</h2>
+		<p>Виктор Цой родился 21 июня 1962 года в Ленинграде (ныне Санкт-Петербург), Россия.</p>
+
+		<h2>Музыкальная карьера</h2>
+		<p>Цой начал свою музыкальную карьеру в качестве фронтмена группы "Кино", которую он создал в 1982 году вместе с коллегой-музыкантом Алексеем Рыбиным. "Кино" быстро стало одной из самых популярных групп в Советском Союзе, а музыка и тексты Цоя оказали глубокое влияние на поколение молодых людей, достигших совершеннолетия в 1980-х годах.</p>
+
+		<h2>Смерть</h2>
+		<p>По иронии судьбы, Цой погиб в автомобильной катастрофе 15 августа 1990 года в возрасте 28 лет. Его смерть стала шоком для всего Советского Союза, и тысячи скорбящих присутствовали на его похоронах.</p>
+
+		<h2>Наследие</h2>
+		<p>Виктора Цоя помнят как одну из самых важных фигур в истории российской рок-музыки. Его музыка и тексты продолжают вдохновлять новые поколения музыкантов и поклонников, и его влияние можно услышать в творчестве артистов самых разных жанров.</p>
+
+        <div class="music-button">
+            <a href="https://music.yandex.ru/search?text=ViktorTsoi" class="button" target="_blank">Послушайте музыку Виктора Цоя</a>
+<div class="counter">Исполняемые песни: <span id="counter">0</span></div>
+</div>
+
+<script>
+    const button = document.querySelector('.music-button');
+    const counter = document.querySelector('#counter');
+
+    button.addEventListener('click', function() {
+        let count = parseInt(counter.textContent);
+        count++;
+        counter.textContent = count;
+    });
+</script>
+<!--
+</body>
+</html>-->
